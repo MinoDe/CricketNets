@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pitch_bg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".CricketPitch"
+    tools:showIn="@layout/activity_cricket_pitch">
+
+    <Button
+        android:id="@+id/oppButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="93dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:onClick="oopClick"
+        android:text="OOP"
+        app:layout_constraintEnd_toStartOf="@+id/mopButton"
+        app:layout_constraintStart_toEndOf="@+id/wideButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/mopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:onClick="mopClick"
+        android:text="MOP"
+        app:layout_constraintBaseline_toBaselineOf="@+id/oppButton"
+        app:layout_constraintEnd_toStartOf="@+id/lopButton"
+        app:layout_constraintStart_toEndOf="@+id/oppButton" />
+
+    <Button
+        android:id="@+id/oglButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:onClick="oglClick"
+        android:text="OGL"
+        app:layout_constraintBaseline_toBaselineOf="@+id/mglButton"
+        app:layout_constraintStart_toEndOf="@+id/wideButton" />
+
+    <Button
+        android:id="@+id/mglButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="40dp"
+        android:onClick="mglClick"
+        android:text="MGL"
+        app:layout_constraintStart_toEndOf="@+id/oglButton"
+        app:layout_constraintTop_toBottomOf="@+id/mopButton" />
+
+    <Button
+        android:id="@+id/ospButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:onClick="ospClick"
+        android:text="OSP"
+        app:layout_constraintBaseline_toBaselineOf="@+id/mspButton"
+        app:layout_constraintStart_toEndOf="@+id/wideButton" />
+
+    <Button
+        android:id="@+id/mspButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="69dp"
+        android:onClick="mspClick"
+        android:text="MSP"
+        app:layout_constraintStart_toEndOf="@+id/ospButton"
+        app:layout_constraintTop_toBottomOf="@+id/mglButton" />
+
+    <Button
+        android:id="@+id/lopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="lopClick"
+        android:text="LOP"
+        app:layout_constraintBaseline_toBaselineOf="@+id/mopButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mopButton" />
+
+    <Button
+        android:id="@+id/lglButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="lglClick"
+        android:text="LGL"
+        app:layout_constraintBaseline_toBaselineOf="@+id/mglButton"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/lspButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="lspClick"
+        android:text="LSP"
+        app:layout_constraintBaseline_toBaselineOf="@+id/mspButton"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/wideButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="3dp"
+        android:onClick="wideClick"
+        android:text="WIDE"
+        app:layout_constraintBottom_toBottomOf="@+id/ospButton"
+        app:layout_constraintEnd_toStartOf="@+id/oppButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/oppButton" />
+</android.support.constraint.ConstraintLayout>
